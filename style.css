@@ -1,0 +1,12 @@
+.title h1 {
+  color: blue; /* Altere 'blue' para qualquer cor que desejar */
+}
+
+#myButton {
+  background-color: gray;
+  color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
