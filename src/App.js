@@ -1,16 +1,13 @@
-function mostrarMenssagem() {
-  const elemento1 = document.getElementById("menssagem1");
-  const elemento2 = document.getElementById("menssagem2");
-  let elemento3 = document.getElementById("menssagem3");
-  const resultado = document.getElementById("resultado");
+function calculaIdade() {
+  const idadeInput = document.getElementById("idade"); //Uma constante declarada, document é um objeto global que representa o documento HTML carregado no navegador. getElementById é um método do objeto document, que é usado para selecionar um elemento HTML com um id específico, no caso a "idade". ou seja idadeInput tem o elemento "idade" agora
+  const resultado = document.getElementById("resultado"); // o mesmo que o de cima
 
-  elemento1.innerHTML = 3;
-  elemento2.innerHTML = 2;
-  
+  const idade = parseInt(idadeInput.value); // uma contante declarada covertida para inteiro, onde o valor do elemento idade, atribuido anteriormente para idadeInput e puxado.
+  resultado.innerHTML = `Sua idade é: ${idade}`; // innerHTML: Esta é uma propriedade do elemento HTML que permite definir ou obter o conteúdo HTML interno do elemento. Quando você define innerHTML, você está substituindo todo o conteúdo dentro do elemento.
 
-  const valor1 = parseInt(elemento1.innerHTML);
-  const valor2 = parseInt(elemento2.innerHTML);
+  if (idade < 18){
+    alert('ATENÇÃO, VOCÊ É MENOR DE IDADE!!!')
+  }
 
-  elemento3 = (valor1 + valor2);
-  resultado.innerHTML = elemento3;
 }
+
