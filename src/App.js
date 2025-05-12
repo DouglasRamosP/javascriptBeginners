@@ -1,14 +1,5 @@
-function saudacao(nome) {
+function soma(num1, num2) {
   const mostra = document.getElementById("mostra");
 
-  mostra.innerHTML = `Olá, ${nome}`;
+  mostra.innerHTML = `A soma dos números é: ${num1 + num2}`;
 }
-
-/*
-CASO QUEIRA CHAMAR SEM A NECESSIDADE DE UM BOTÃO USE:
-
-// Chama a função automaticamente ao carregar a página
-window.onload = () => {
-  saudacao("Douglas");
-};
-*/
