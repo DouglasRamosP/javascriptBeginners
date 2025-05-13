@@ -8,6 +8,7 @@ function altera(estudante) {
   const mostra = document.getElementById("mostra");
 
   estudante.idade = 28;
+  estudante.semestre = 5;
 
   mostra.innerHTML = `
   <p>Seu objeto foi alterado:</p>
@@ -15,6 +16,7 @@ function altera(estudante) {
     <li>Nome: ${estudante.nome}</li>
     <li>Idade: ${estudante.idade}</li>
     <li>Curso: ${estudante.curso}</li>
+    <li>Semestre: ${estudante.semestre}</li>
   </ul>
 `;
 }
