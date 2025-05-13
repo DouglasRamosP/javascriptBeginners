@@ -1,22 +1,17 @@
-let estudante = {
-  nome: "Douglas",
-  idade: 27,
-  curso: "Sistemas de Informação",
-};
+let frutas = ["banana", "maçã", "uva"];
 
-function altera(estudante) {
+function altera(frutas) {
   const mostra = document.getElementById("mostra");
 
-  estudante.idade = 28;
-  estudante.semestre = 5;
+  frutas.push("kiwi");
+  frutas.shift();
 
   mostra.innerHTML = `
-  <p>Seu objeto foi alterado:</p>
+  <p>Seu array foi alterado:</p>
   <ul>
-    <li>Nome: ${estudante.nome}</li>
-    <li>Idade: ${estudante.idade}</li>
-    <li>Curso: ${estudante.curso}</li>
-    <li>Semestre: ${estudante.semestre}</li>
+    <li>1º: ${frutas[0]}</li>
+    <li>2º: ${frutas[1]}</li>
+    <li>3º: ${frutas[2]}</li>   
   </ul>
 `;
 }
