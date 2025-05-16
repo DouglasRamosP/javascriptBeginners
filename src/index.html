@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exemplos DOM</title>
+    <title>Manipulando Campos de Formulário com JavaScript</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1 id="main-heading">Título Principal</h1>
-    <div id="main">
-      <p>Este é um parágrafo de exemplo.</p>
-    </div>
-    <a href="https://www.example.com">Visite nosso site</a>
-    <br />
-    <br />
-    <button id="myButton">Button</button>
-    <p id="myParagraph">Passe o mouse sobre este parágrafo</p>
+    <form id="meuFormulario"></form>
+    <label for="nome">Nome:</label><br />
+    <input type="text" id="nome" name="nome" /><br />
+    <input type="checkbox" id="meuCheckbox" name="meuCheckbox" />
+    <label for="meuCheckbox">Aceito os termos</label><br />
+    <label for="meuSelect">Escolha a opção:</label>
+    <select id="meuSelect" name="meuSelect">
+      <option value="opcao1">Opção 1</option>
+      <option value="opcao1">Opção 2</option>
+      <option value="opcao1">Opção 3</option>
+    </select>
   </body>
 </html>
